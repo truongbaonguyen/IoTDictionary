@@ -29,14 +29,14 @@ Có thể thấy chúng ta cũng có 3 ma trận đại diện cho kênh RGB. Ba
 
 
 
-# **Cách sử dụng kỹ thuật trích xuất đặc trưng cho dữ liệu hình ảnh:**
-## **Các đặc trưng dưới dạng giá trị pixel thang độ xám**
+# **Cách sử dụng kỹ thuật trích xuất đặc trưng cho dữ liệu hình ảnh**
+## **1. Các đặc trưng dưới dạng giá trị pixel trong ảnh xám**
 Nếu chúng ta sử dụng ví dụ tương tự như hình ảnh mà chúng ta sử dụng ở trên tthì kích thước của hình ảnh là 340 x 680. Số lượng các đặc trưng giống như số lượng pixel nên số lượng đặc trưng sẽ là 340 x 680 = 231200.
 
 Vì vậy, làm cách nào để khai báo 231200 pixel là các đặc trưng của hình ảnh này? Giải pháp là, chúng ta chỉ cần nối từng giá trị pixel lần lượt để tạo ra một vectơ đặc trưng cho hình ảnh.
 
 `	`![](https://lh3.googleusercontent.com/rkBUhcvkwbrN7c9T0FIm_P2Svt7MrZHIBZa9LWD75jhb5PrDqDjGVmHKzIBwoOgzenJffHP6r8tsIm3EF3KHxY2uT3JHMmEQRN8S6n-cJ-pVd-UhcPL-p3ttSKYt7wbEYsFyCVPlDvGDuBfPlM_iSDRhSMchM5RjrIbVOhqUn6Xp8f_DS7KkRtETHhvg0gxoZnVxLb03HFImwMvzYt__veDW3_Tjp1wUkRBNinatCnK-Sktp50mImUUyDs5WnMQTu74f8gW2eo5iu8877UOUaVrzRqlYpYYgR5XkMORlOOB6xVu0fUvFjO6LUzk2OAyyKMDphDRFWzZPJLoE6kUoE26yLwHOgO8qGrd6AOarhTno3x7QUwyMZ5YtJWkV_7z9M9C7jR2S7eNkC07JekIn5-Bi4ppiRDy1OM46mih0uGNlnWtllCboBuzXcoB9mIV2qD1razLRcsgY_4IZPXReTFnaUp30S3-juTv1lKx56Yus_mV35d1Pp4xvA6pedy8VhyGi-DSlnCXznaT5W_4gIT4iRgpXpKoobFbC5uvqNAR4LYYJZQwrnCXWZwLltieln0e-xxIKT1feKHAXPB5kl97Pf-31AqOyOOoJVZ4i5_9pFjk3yqALjJq4J--fik-WzwwMFRl37uF2gAahlMGzgDE9KGqyKqwztfHA2F2K2iJsx1wX-zopQeQhDVSPvBmot8WGcngysP9ZTxYLYm5fkQ=w726-h672-no?authuser=0)
-## **Các đặc trưng là giá trị pixel trung bình trong kênh**
+## **2. Các đặc trưng là giá trị pixel trung bình các kênh trong ảnh RGB**
 
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-6.png)
 
@@ -56,7 +56,7 @@ Bây giờ chúng ta đã tạo ra một ma trận mới có cùng chiều cao v
 
 ![](https://lh3.googleusercontent.com/XiUAhZIfTz9cFLI-NZJGDlAAReCbtd5MwOv8D-W1gsnvi6ljbFdlroTQCXEckWJs9Utba434yQlAfhgMFd4QWRL2pXoXMcw8ofjcdG6brFtkwJZoSmI0qB2WTYNm1s1l4tdTbjK9CIwu2cE9OyXahp5kipScioqgo2GwlySZD1Ru-B5ZKYl167PwrP5e8vJa1wulV3VDjhvW6h6ggGQiNDKO6RSWAzh8rIfq40S2sOXYCjA7XgvJO_l-9cH8Uz5yol_OiQ86SqdnmZZ4r_90cPDCJfYPIWyMRE6OcZwDq_5e6Vh_CBTX9jXVMt7rEl8Y8wWaiVYjwzmDhvYmF4OY_YUK9X53cgqmB5y263nLpxyU1yzCeKZgU8wjZjNWP36hwjmLD47apCdfoVOiJAmCfQWPMs8RzmzwaChvPpB55PlI9itkvZasr6Y-J_8oyXTyAanh8TtuFtFOnk7rRBriy7cESj7dNP6yePbxvROmXPk69uNsT8FeasO6qFGworCeZYXNiYJ9XB9svAraHXPSEpgAvU1T2UqmtCt4kjSKK0qJFp3aE77hWmbfASyKGGxqUa2TDwvT-vhbJCx5DsNPu5meBYLJ4RBWzJIzXGmv8mjnzQlHquLA6f5BSWKu0MUEdMgU7oGDhg98HJ7S7bWjsb1osYdi7ZbCO282r_Dq25NLtv5vBWKx_t4pYsLGobhpWRsI0Xl8oovoZ-xvquG2tg=w994-h440-no?authuser=0)
 
-## **Các đặc trưng dưới dạng cạnh**
+## **3. Các đặc trưng dưới dạng cạnh**
 Cạnh về cơ bản là nơi có sự thay đổi rõ nét về màu sắc. Và như chúng ta đã biết, một hình ảnh được biểu diễn dưới dạng các con số. Vì vậy, chúng tôi sẽ tìm kiếm các pixel xung quanh có sự thay đổi mạnh mẽ trong các giá trị pixel.
 
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-81.png)
@@ -87,8 +87,8 @@ Có rất nhiều loại nhân dưới đây là 4 loại hạt nhân thường 
 
 # Kết bài
 Chúng ta đã đi tìm hiểu những khái niệm cơ bản đầu tiên liên quan đến trích xuất đặc trưng. Trong bài viết này trình bày 3 cách cơ bản để trích xuất đặc trưng đó là:
-  1. Các đặc trưng dưới dạng giá trị pixel thang độ xám
-  2. Các đặc trưng là giá trị pixel trung bình trong kênh
+  1. Các đặc trưng dưới dạng giá trị pixel trong ảnh xám
+  2. Các đặc trưng là giá trị pixel trung bình các kênh trong ảnh RGB
   3. Các đặc trưng dưới dạng cạnh
 
 ## Authors
