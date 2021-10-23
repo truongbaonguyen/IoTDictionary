@@ -1,5 +1,5 @@
 ﻿# **Trích xuất đặc trưng là gì?**
-  Trích xuất đặc trưng là một phần của quy trình giảm kích thước, trong đó, tập hợp dữ liệu thô ban đầu được chia và giảm thành các nhóm dễ quản lý hơn. Vì vậy, khi bạn muốn xử lý sẽ dễ dàng hơn. Đặc điểm quan trọng nhất của các tập dữ liệu lớn này là chúng có một số lượng lớn các biến. Các biến này yêu cầu nhiều tài nguyên máy tính để xử lý chúng. Vì vậy, việc trích xuất đặc trưng giúp có được tính năng tốt nhất từ ​​các tập dữ liệu lớn đó bằng cách chọn và kết hợp các biến thành các tính năng, do đó, giảm lượng dữ liệu một cách hiệu quả. Các tính năng này rất dễ xử lý, nhưng vẫn có thể mô tả tập dữ liệu thực tế với độ chính xác và độc đáo.
+Trích xuất đặc trưng là một phần của quy trình giảm kích thước, trong đó, tập hợp dữ liệu thô ban đầu được chia và giảm thành các nhóm dễ quản lý hơn. Vì vậy, khi bạn muốn xử lý sẽ dễ dàng hơn. Đặc điểm quan trọng nhất của các tập dữ liệu lớn này là chúng có một số lượng lớn các biến. Các biến này yêu cầu nhiều tài nguyên máy tính để xử lý chúng. Vì vậy, việc trích xuất đặc trưng giúp có được tính năng tốt nhất từ ​​các tập dữ liệu lớn đó bằng cách chọn và kết hợp các biến thành các tính năng, do đó, giảm lượng dữ liệu một cách hiệu quả. Các tính năng này rất dễ xử lý, nhưng vẫn có thể mô tả tập dữ liệu thực tế với độ chính xác và độc đáo.
 # **Tại sao trích xuất đặc trưng hữu ích?**
 Kỹ thuật trích xuất các tính năng rất hữu ích khi bạn có một tập dữ liệu lớn và cần giảm số lượng tài nguyên mà không làm mất bất kỳ thông tin quan trọng hoặc liên quan nào. Tính năng trích xuất giúp giảm lượng dữ liệu dư thừa từ tập dữ liệu.
 
@@ -9,7 +9,7 @@ Cuối cùng, việc giảm dữ liệu sẽ giúp xây dựng mô hình với �
 
 Máy móc nhìn thấy bất kỳ hình ảnh nào dưới dạng ma trận số. Kích thước của ma trận này thực sự phụ thuộc vào số lượng pixel của hình ảnh đầu vào.
 
-**Pixel là gì?**
+**_Pixel là gì?**
 
 Giá trị Pixel cho mỗi pixel là viết tắt hoặc mô tả độ sáng và màu sắc của pixel đó. Vì vậy, trong trường hợp đơn giản nhất của ảnh nhị phân, giá trị pixel là số 1 bit cho biết nền trước hoặc nền sau (ảnh trắng đen). Vậy pixel là số hoặc giá trị biểu thị cường độ hoặc độ sáng của pixel. Các số nhỏ gần 0 biểu thị màu đen và các số lớn gần 255 biểu thị màu trắng. Vậy, đây là khái niệm về pixel và cách máy nhìn thấy hình ảnh thông qua các con số mà không cần mắt.
 
@@ -85,16 +85,16 @@ Có rất nhiều loại nhân dưới đây là 4 loại hạt nhân thường 
 
 ![](https://lh3.googleusercontent.com/VwACNSKIiL40oWg677SY9jnTLFrdI0-846s19PPRuNPJ3eF4Fj7wENw3JRWw2DT4979WQmRDv4aOx9ys2sDgJyxIk6rndGjQS7TGmckDBDTat1dQGO6cu-eNBZcq6Yfe7V4Ro6CEHBTdCMrAXvq46dpW9Z1Y_bx9MxamN7rHM7Ga_9Wpl1KhPNLOOY_W1IGPaluWOeeb_VObP_Wy5-e3vLGp0cnPbd_qtO-WAsV1ycaz6v0XtIo2jHoYnDe2PG2Lx3cZDal9_mIFMlHQzmX8NXTlZ1em71CJlgnzwks1S3djtExUsfSKyt41oyuyAibSJTz2oj2WX5QYVffqryQV2w168B2hDseZ6Xkc5-UftEwfRxqoqgAOjL6noMzvIyBtl_Wv7DuIBw6yCLoPr2cE3wpJ9T07YPxcGlQdWvu8co7w90zipE9QkqIRXi1s6jLAOTNK4j_31KUIQ9EzykYZal5IA5VKTnaC9umnPOnwxnJ_2N3rvZmsZsUiZY0O6miwPcFsZr-9NCveNXs7oTYSa7Zd_wM5mI7FDA39cfuKUXC6DW8Yvndlt8UjOLRYT1VgGwvyIA4xEnNdy0V9VASBQP2eYvFbRmdz62lvXVD9SECXriShwX0QHDsvNs-Aur9ie1WNBT4QaKuyYdLEJ1cwZ33QGbNs1OTa4WcjcsaNIuXztiwzQZpv-vAR-8o3dQf77GniATZS-uvufLtO82QlEA=w992-h654-no?authuser=0)
 
-# Kết bài
+# **Lời kết**
 Chúng ta đã đi tìm hiểu những khái niệm cơ bản đầu tiên liên quan đến trích xuất đặc trưng. Trong bài viết này trình bày 3 cách cơ bản để trích xuất đặc trưng đó là:
   1. Các đặc trưng dưới dạng giá trị pixel trong ảnh xám
   2. Các đặc trưng là giá trị pixel trung bình các kênh trong ảnh RGB
   3. Các đặc trưng dưới dạng cạnh
 
-## Authors
+## **Authors**
 
 * **Truong Bao Nguyen** - [truongbaonguyen](https://github.com/truongbaonguyen)
 
 * **Trinh Tran Trung** - [flyingman2401](https://github.com/flyingman2401)
 
-## License
+## **License**
