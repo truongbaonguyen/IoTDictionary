@@ -55,3 +55,32 @@ Trong hình ảnh màu này có một ma trận 3D có kích thước (340 \* 68
 Bây giờ chúng ta đã tạo ra một ma trận mới có cùng chiều cao và chiều rộng nhưng chỉ có 1 kênh. Để chuyển đổi ma trận thành mảng 1 chiều, chúng ta sẽ sử dụng thư viện Numpy như phần trước.
 
 ![](https://lh3.googleusercontent.com/XiUAhZIfTz9cFLI-NZJGDlAAReCbtd5MwOv8D-W1gsnvi6ljbFdlroTQCXEckWJs9Utba434yQlAfhgMFd4QWRL2pXoXMcw8ofjcdG6brFtkwJZoSmI0qB2WTYNm1s1l4tdTbjK9CIwu2cE9OyXahp5kipScioqgo2GwlySZD1Ru-B5ZKYl167PwrP5e8vJa1wulV3VDjhvW6h6ggGQiNDKO6RSWAzh8rIfq40S2sOXYCjA7XgvJO_l-9cH8Uz5yol_OiQ86SqdnmZZ4r_90cPDCJfYPIWyMRE6OcZwDq_5e6Vh_CBTX9jXVMt7rEl8Y8wWaiVYjwzmDhvYmF4OY_YUK9X53cgqmB5y263nLpxyU1yzCeKZgU8wjZjNWP36hwjmLD47apCdfoVOiJAmCfQWPMs8RzmzwaChvPpB55PlI9itkvZasr6Y-J_8oyXTyAanh8TtuFtFOnk7rRBriy7cESj7dNP6yePbxvROmXPk69uNsT8FeasO6qFGworCeZYXNiYJ9XB9svAraHXPSEpgAvU1T2UqmtCt4kjSKK0qJFp3aE77hWmbfASyKGGxqUa2TDwvT-vhbJCx5DsNPu5meBYLJ4RBWzJIzXGmv8mjnzQlHquLA6f5BSWKu0MUEdMgU7oGDhg98HJ7S7bWjsb1osYdi7ZbCO282r_Dq25NLtv5vBWKx_t4pYsLGobhpWRsI0Xl8oovoZ-xvquG2tg=w994-h440-no?authuser=0)
+
+## **Trích xuất đặc trưng là các cạnh**
+Cạnh về cơ bản là nơi có sự thay đổi rõ nét về màu sắc. Và như chúng ta đã biết, một hình ảnh được biểu diễn dưới dạng các con số. Vì vậy, chúng tôi sẽ tìm kiếm các pixel xung quanh có sự thay đổi mạnh mẽ trong các giá trị pixel.
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-81.png)
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-9.png)
+
+Để xác định xem một pixel có phải là một cạnh hay không, chúng ta chỉ cần trừ các giá trị ở hai bên của pixel. Đối với ví dụ này, ta có giá trị được đánh dấu là 85. Chúng ta sẽ tìm sự khác biệt giữa hai giá trị 89 và 78. Vì sự khác biệt này không lớn lắm nên ta có thể nói rằng không có cạnh xung quanh pixel này.
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-101.png)
+
+Bây giờ hãy xem xét pixel 125 được đánh dấu trong hình. Vì sự khác biệt giữa các giá trị ở hai bên của pixel này lớn, ta có thể kết luận rằng có một sự chuyển đổi đáng kể tại pixel này và do đó nó là một cạnh. Bây giờ câu hỏi đặt ra là liệu chúng ta có cần phải thực hiện bước này theo cách thủ công không?
+Câu trả là không. Có nhiều nhân khác nhau có thể được sử dụng để làm nổi bật các cạnh trong hình ảnh. Phương pháp chúng ta vừa thảo luận cũng có thể đạt được bằng cách sử dụng nhân Prewitt (theo hướng x). Dưới đây là nhân Prewitt:
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-132.png)
+
+Lấy các giá trị xung quanh pixel đã chọn và nhân nó với nhân đã chọn (nhân Prewitt). Sau đó, chúng ta có thể thêm các giá trị kết quả để nhận được giá trị cuối cùng. Vì chúng ta đã có -1 trong một cột và 1 trong cột kia, nên việc thêm các giá trị tương đương với việc lấy chênh lệch.
+
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-111.png)
+
+Có rất nhiều loại nhân dưới đây là 4 loại hạt nhân thường được sử dụng phổ biến nhất:
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-121.png)
+
+![](https://lh3.googleusercontent.com/Dyvc4DzEyvY-piknxq-u4YFdmgvqS_IgaJvOeYI237RNmfRmiK14ixs1NuOyvgbjex6GnSN_AVGPccks0a2Rs4YsjC0b0zkq5Trp6QQTktyHDFy5a9QInL2q0niVfqE6v1IgxOjL9F-1sWZdx67DSZu1WKCMh7rsasQzzzZBAADfOrQMDXDeq--_h7tGw2vcCjUW8rBeWYQAdOA3DtaTb3rMxoZW9tIj6L4OLSvOUFF6CxjKSTueCk9stVhUu9FF5ps5mLFJy_f19fRdsY_A1fbryOvf8oUaXxb_-T_FY8_koWDrGRa6fxjXQOOskEYdJIN4BrhePfjK8ZF9vgpqgX_L5PNbVHo4BAkMIFXEhiXvtPW2x_HPpEX8K0ML5WBmHfgt9QZiQ9RBdztXafpRzQfGZmEphqJ0BYCLRGPQ5uCzrGgMR2--mVMlm-ZGosuUcCrKt6GkWioCZFrBCEFVYBo4V5upOWYtNryGM9wkD8Vyq7wUt9tOBZGMgojCdXaVLBZ7zH2U0mWBl494_aKluTLNk9M8zNeJCKWhSWjgTEJsHa5dEc7Ygehx3WqrQ0duuGtPP9AcUFTq0LcIJfR2JMRNeNEu6kxk1k3HedOkkWTnMvt7OYaYht4JUVnkQfIDxvejgdNW05pVT5k4C7qpo6nAc4ZV4qf108l7vgsYEFp8yV0_i4mprP_KKj9m3LLj-Q0MHuCEvLARt7IU8Rw9ag=w1001-h659-no?authuser=0)
+
+![](https://lh3.googleusercontent.com/VwACNSKIiL40oWg677SY9jnTLFrdI0-846s19PPRuNPJ3eF4Fj7wENw3JRWw2DT4979WQmRDv4aOx9ys2sDgJyxIk6rndGjQS7TGmckDBDTat1dQGO6cu-eNBZcq6Yfe7V4Ro6CEHBTdCMrAXvq46dpW9Z1Y_bx9MxamN7rHM7Ga_9Wpl1KhPNLOOY_W1IGPaluWOeeb_VObP_Wy5-e3vLGp0cnPbd_qtO-WAsV1ycaz6v0XtIo2jHoYnDe2PG2Lx3cZDal9_mIFMlHQzmX8NXTlZ1em71CJlgnzwks1S3djtExUsfSKyt41oyuyAibSJTz2oj2WX5QYVffqryQV2w168B2hDseZ6Xkc5-UftEwfRxqoqgAOjL6noMzvIyBtl_Wv7DuIBw6yCLoPr2cE3wpJ9T07YPxcGlQdWvu8co7w90zipE9QkqIRXi1s6jLAOTNK4j_31KUIQ9EzykYZal5IA5VKTnaC9umnPOnwxnJ_2N3rvZmsZsUiZY0O6miwPcFsZr-9NCveNXs7oTYSa7Zd_wM5mI7FDA39cfuKUXC6DW8Yvndlt8UjOLRYT1VgGwvyIA4xEnNdy0V9VASBQP2eYvFbRmdz62lvXVD9SECXriShwX0QHDsvNs-Aur9ie1WNBT4QaKuyYdLEJ1cwZ33QGbNs1OTa4WcjcsaNIuXztiwzQZpv-vAR-8o3dQf77GniATZS-uvufLtO82QlEA=w992-h654-no?authuser=0)
