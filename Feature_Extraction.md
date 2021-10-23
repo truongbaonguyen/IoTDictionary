@@ -30,13 +30,13 @@ Có thể thấy chúng ta cũng có 3 ma trận đại diện cho kênh RGB. Ba
 
 
 # **Cách sử dụng kỹ thuật trích xuất đặc trưng cho dữ liệu hình ảnh:**
-## **Các đối tượng dưới dạng giá trị pixel thang độ xám**
+## **Các đặc trưng dưới dạng giá trị pixel thang độ xám**
 Nếu chúng ta sử dụng ví dụ tương tự như hình ảnh mà chúng ta sử dụng ở trên tthì kích thước của hình ảnh là 340 x 680. Số lượng các đặc trưng giống như số lượng pixel nên số lượng đặc trưng sẽ là 340 x 680 = 231200.
 
 Vì vậy, làm cách nào để khai báo 231200 pixel là các đặc trưng của hình ảnh này? Giải pháp là, chúng ta chỉ cần nối từng giá trị pixel lần lượt để tạo ra một vectơ đặc trưng cho hình ảnh.
 
 `	`![](https://lh3.googleusercontent.com/rkBUhcvkwbrN7c9T0FIm_P2Svt7MrZHIBZa9LWD75jhb5PrDqDjGVmHKzIBwoOgzenJffHP6r8tsIm3EF3KHxY2uT3JHMmEQRN8S6n-cJ-pVd-UhcPL-p3ttSKYt7wbEYsFyCVPlDvGDuBfPlM_iSDRhSMchM5RjrIbVOhqUn6Xp8f_DS7KkRtETHhvg0gxoZnVxLb03HFImwMvzYt__veDW3_Tjp1wUkRBNinatCnK-Sktp50mImUUyDs5WnMQTu74f8gW2eo5iu8877UOUaVrzRqlYpYYgR5XkMORlOOB6xVu0fUvFjO6LUzk2OAyyKMDphDRFWzZPJLoE6kUoE26yLwHOgO8qGrd6AOarhTno3x7QUwyMZ5YtJWkV_7z9M9C7jR2S7eNkC07JekIn5-Bi4ppiRDy1OM46mih0uGNlnWtllCboBuzXcoB9mIV2qD1razLRcsgY_4IZPXReTFnaUp30S3-juTv1lKx56Yus_mV35d1Pp4xvA6pedy8VhyGi-DSlnCXznaT5W_4gIT4iRgpXpKoobFbC5uvqNAR4LYYJZQwrnCXWZwLltieln0e-xxIKT1feKHAXPB5kl97Pf-31AqOyOOoJVZ4i5_9pFjk3yqALjJq4J--fik-WzwwMFRl37uF2gAahlMGzgDE9KGqyKqwztfHA2F2K2iJsx1wX-zopQeQhDVSPvBmot8WGcngysP9ZTxYLYm5fkQ=w726-h672-no?authuser=0)
-## **Giá trị pixel trung bình trong kênh**
+## **Các đặc trưng là giá trị pixel trung bình trong kênh**
 ![](https://lh3.googleusercontent.com/n9CHY78v-WLK-hPTVTiZiHgzOPyPSG-QmvEihVMXaqpQq2afnTrLoaHZejsKdWszx_7HZI9xITwDUrdW_ThZPLLtfs5DEhkpj30QLd6MldGUBZ7qxdd4C4oN2MXSKEv_7Tm4aEbsaUxHOum5FI8I1yWweRhU88eJ2_B6oRJd4l6dYkyRPtrbhRlvKjxkw71DXAKeJ8pngvEfqyuZw9Nb4xeozExZ1oucKTimZEoQ7rLLY_GwvKyCkC4gvSH-d-uyOqJKwd2RQCG2Su7Xfevrb64FjbVddFrvcEP49g6ybUMwmOu3dvKOoeaELvecjLStwdSFymNFziJlZpeEotJIpWmXJLd0fjWfYaSrbGzqzbcehwo_RTOiM_2qg2_jaZdDgIMaM8vUFbDjkkXTvNTGskh-l2ODfJsP9nzHRLNDu5eY0vogSwzxdsXPTRhfYN2BqU9ZoUN4gdK179kcRZdZppSa-OpDdeEjt0u0QQ1Auc89TC5qllG527KUlRcB3PVNJ6I_1E53wHI0usqUjISRRG5-c0TiAnyBeKiKMHnipH6_Yt9Vyp_axMicY9aUV_rFthF85FFnT-m0-akn3XABEfQUrsL42Gc6PcJ8aLtotm-Ss6n-4RmSmvQLH8kr6EEbcj1aOAoCGq4HPHNYTX5i6zNx5mm653Zg7wICjA1QvJTr9Rs5VSOQTP5HbtiQ_bGZG8l0gbTefFg0emY6WWz6dg=w894-h636-no?authuser=0)
 
 Đối với trường hợp này, hình ảnh có một kích thước (340, 680, 3). Ba giá trị này đại diện cho giá trị RGB cũng như số lượng kênh. Bây giờ chúng ta sẽ sử dụng phương pháp trước để tạo các đặc trưng.
