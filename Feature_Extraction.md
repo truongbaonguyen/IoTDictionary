@@ -9,9 +9,11 @@ Cuối cùng, việc giảm dữ liệu sẽ giúp xây dựng mô hình với �
 
 Máy móc nhìn thấy bất kỳ hình ảnh nào dưới dạng ma trận số. Kích thước của ma trận này thực sự phụ thuộc vào số lượng pixel của hình ảnh đầu vào.
 
-**Pixel là gì?**
+**_Pixel là gì?**
 
 Giá trị Pixel cho mỗi pixel là viết tắt hoặc mô tả độ sáng và màu sắc của pixel đó. Vì vậy, trong trường hợp đơn giản nhất của ảnh nhị phân, giá trị pixel là số 1 bit cho biết nền trước hoặc nền sau (ảnh trắng đen). Vậy pixel là số hoặc giá trị biểu thị cường độ hoặc độ sáng của pixel. Các số nhỏ gần 0 biểu thị màu đen và các số lớn gần 255 biểu thị màu trắng. Vậy, đây là khái niệm về pixel và cách máy nhìn thấy hình ảnh thông qua các con số mà không cần mắt.
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-16.png)
 
 Tuy nhiên, đối với trường hợp hình ảnh có màu, chúng ta có 3 ma trận hoặc 3 kênh: màu đỏ (R), màu xanh lá (G), xanh lam (B). Trong 3 ma trận này, mỗi ma trận có các giá trị từ 0-255 đại diện cho cường độ màu của pixel đó.
 
@@ -19,20 +21,25 @@ Tuy nhiên, đối với trường hợp hình ảnh có màu, chúng ta có 3 m
 
 Có thể thấy chúng ta cũng có 3 ma trận đại diện cho kênh RGB. Ba kênh này được xếp chồng lên nhau và được sử dụng để tạo thành một hình ảnh có màu. Đây là cách máy tính có thể phân biệt giữa các hình ảnh.
 
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-41.png)
+
 ![](https://lh3.googleusercontent.com/AuDM9SFAk5-fvFf85dMu9xksW5cplbuIuYNlOYQATdO1XKkIOYpiGMHSWKffK6evT6Q9cAGmyPwBfIPTffcu2YodkjzRDYWbQvJLUoqHyyVRqlDTF2PQXDgUD63BWXydo5sOZq1qDdhpdgkvzewjb-vfNHAgDaZDyxbujGNQAc8nJ94PU6c11tmuVNnsZdYMIcHbUm5lPTplif-FjkqA_8q5PoLOlrl8c8d7ltarkto97V41HJKWz3y9Y0pP_6Wp145y0m4uo2YFJRCMM_likaFsewf6E4XO3ixP3jWeKkLOeN_nCzurKEIEOwPi00mHWl8BbkzkxrRrvv6RrwIraSJ-S8wHTEc2gDPAQ9H8gxmmGEaWELyE1QJJSIXE7fAuD61UdnE8S_BgyePYODdPH8lydOI_emm9LkcievEsZvhCxJ4zfa8qpk21bjpYngS2nTFDZYZReIesUBLZNdapl5KG-oaolkkRnd4_FjqzfTxST6fEN3wHYhBxFd0dq3hj0aodF4hzcWteUNQDQJm4jt1kR4rrbumyrYr94wUMuTFSQV3V5VnyJC2lnxbVR6-UCrrxu9RoGtigQksYq4a8MkDMkI0rmpOygb_jdIq1BFg0FPOhp0Q2KVt_IgJdvRXuR734PS5E0YMHQGSEQCwjTDk9kxEdATzrI6TlQJiSTG0bqm0bOn0lMuiPPFYX7FZjVeadpGhxKh4D3GNW_wEsWA=w991-h730-no?authuser=0)
 
 ![](https://lh3.googleusercontent.com/ZgSt-mZcnAygiW9vv8DbiegDkO8MdT3u2ZGhpgL-NM9YQMbM_sdMjI5Sj9Mg4118XzMx6bZk7zU8sxl-RcTQKNBg6ZxhYUjf4545wuC14VEi_gP1ypylEjgavPnVc45-4lVHS9QCoZ_4kcyImkxC0Q79T_2z4pGP7_KZ10f0lzV3wVU65leUvDefH-U8Tnv56BNzVwu9T-VpE82ZTlyqVpzGc35GA5k96QbIzE0y8yEP7aE1DIbsuqYSb5_jDglfRdRSfcU2LYxltvhy1tFYfFUZ7NH-pHgFY_75qCWoo7sfEISE3MlEdGSm4J-GLRnEhVMhD9z2ONlEAgGU4Fyfdk912JHE-KWgQ-BX-V4zfMuTSOxXl83po_2J-OZ9_VjIWZgkFKBhXpfpqxr97MbfssfDk-IvRF4_j2iBYtmHP91S7UTp2DmW-VeV3waq_zqn2ngLHOwOwlhKboP_H6ezRrPitp669S8_z5gjHu3ltV7pfEu2bKICIy6KwidKBQW9VZt5gxOvYIRLaTRWowWXNuw40r9Ka8azIkYR1qD8GDv9Ka12PjeTyW7GnmcpDWGqz2p82-piDvWQvcDZ1LeElvQjxRiYqMQ3KD7m5_rG43miPWDFqk9jl2LnnqHbPZ5YHawkz4LZaAZzVx70fEA_DKuBQHjs22tjLbechkoTEN0V1MHQ81T1-X4NdEiqr6GZZdGwNLw-u7gNg8YeC5H5Ag=w858-h715-no?authuser=0)
 
 
 
-# **Cách sử dụng kỹ thuật trích xuất đặc trưng cho dữ liệu hình ảnh:**
-## **Các đối tượng dưới dạng giá trị pixel thang độ xám**
+# **Cách sử dụng kỹ thuật trích xuất đặc trưng cho dữ liệu hình ảnh**
+## **1. Các đặc trưng dưới dạng giá trị pixel trong ảnh xám**
 Nếu chúng ta sử dụng ví dụ tương tự như hình ảnh mà chúng ta sử dụng ở trên tthì kích thước của hình ảnh là 340 x 680. Số lượng các đặc trưng giống như số lượng pixel nên số lượng đặc trưng sẽ là 340 x 680 = 231200.
 
 Vì vậy, làm cách nào để khai báo 231200 pixel là các đặc trưng của hình ảnh này? Giải pháp là, chúng ta chỉ cần nối từng giá trị pixel lần lượt để tạo ra một vectơ đặc trưng cho hình ảnh.
 
 `	`![](https://lh3.googleusercontent.com/rkBUhcvkwbrN7c9T0FIm_P2Svt7MrZHIBZa9LWD75jhb5PrDqDjGVmHKzIBwoOgzenJffHP6r8tsIm3EF3KHxY2uT3JHMmEQRN8S6n-cJ-pVd-UhcPL-p3ttSKYt7wbEYsFyCVPlDvGDuBfPlM_iSDRhSMchM5RjrIbVOhqUn6Xp8f_DS7KkRtETHhvg0gxoZnVxLb03HFImwMvzYt__veDW3_Tjp1wUkRBNinatCnK-Sktp50mImUUyDs5WnMQTu74f8gW2eo5iu8877UOUaVrzRqlYpYYgR5XkMORlOOB6xVu0fUvFjO6LUzk2OAyyKMDphDRFWzZPJLoE6kUoE26yLwHOgO8qGrd6AOarhTno3x7QUwyMZ5YtJWkV_7z9M9C7jR2S7eNkC07JekIn5-Bi4ppiRDy1OM46mih0uGNlnWtllCboBuzXcoB9mIV2qD1razLRcsgY_4IZPXReTFnaUp30S3-juTv1lKx56Yus_mV35d1Pp4xvA6pedy8VhyGi-DSlnCXznaT5W_4gIT4iRgpXpKoobFbC5uvqNAR4LYYJZQwrnCXWZwLltieln0e-xxIKT1feKHAXPB5kl97Pf-31AqOyOOoJVZ4i5_9pFjk3yqALjJq4J--fik-WzwwMFRl37uF2gAahlMGzgDE9KGqyKqwztfHA2F2K2iJsx1wX-zopQeQhDVSPvBmot8WGcngysP9ZTxYLYm5fkQ=w726-h672-no?authuser=0)
-## **Giá trị pixel trung bình trong kênh**
+## **2. Các đặc trưng là giá trị pixel trung bình các kênh trong ảnh RGB**
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-6.png)
+
 ![](https://lh3.googleusercontent.com/n9CHY78v-WLK-hPTVTiZiHgzOPyPSG-QmvEihVMXaqpQq2afnTrLoaHZejsKdWszx_7HZI9xITwDUrdW_ThZPLLtfs5DEhkpj30QLd6MldGUBZ7qxdd4C4oN2MXSKEv_7Tm4aEbsaUxHOum5FI8I1yWweRhU88eJ2_B6oRJd4l6dYkyRPtrbhRlvKjxkw71DXAKeJ8pngvEfqyuZw9Nb4xeozExZ1oucKTimZEoQ7rLLY_GwvKyCkC4gvSH-d-uyOqJKwd2RQCG2Su7Xfevrb64FjbVddFrvcEP49g6ybUMwmOu3dvKOoeaELvecjLStwdSFymNFziJlZpeEotJIpWmXJLd0fjWfYaSrbGzqzbcehwo_RTOiM_2qg2_jaZdDgIMaM8vUFbDjkkXTvNTGskh-l2ODfJsP9nzHRLNDu5eY0vogSwzxdsXPTRhfYN2BqU9ZoUN4gdK179kcRZdZppSa-OpDdeEjt0u0QQ1Auc89TC5qllG527KUlRcB3PVNJ6I_1E53wHI0usqUjISRRG5-c0TiAnyBeKiKMHnipH6_Yt9Vyp_axMicY9aUV_rFthF85FFnT-m0-akn3XABEfQUrsL42Gc6PcJ8aLtotm-Ss6n-4RmSmvQLH8kr6EEbcj1aOAoCGq4HPHNYTX5i6zNx5mm653Zg7wICjA1QvJTr9Rs5VSOQTP5HbtiQ_bGZG8l0gbTefFg0emY6WWz6dg=w894-h636-no?authuser=0)
 
 Đối với trường hợp này, hình ảnh có một kích thước (340, 680, 3). Ba giá trị này đại diện cho giá trị RGB cũng như số lượng kênh. Bây giờ chúng ta sẽ sử dụng phương pháp trước để tạo các đặc trưng.
@@ -48,3 +55,46 @@ Trong hình ảnh màu này có một ma trận 3D có kích thước (340 \* 68
 Bây giờ chúng ta đã tạo ra một ma trận mới có cùng chiều cao và chiều rộng nhưng chỉ có 1 kênh. Để chuyển đổi ma trận thành mảng 1 chiều, chúng ta sẽ sử dụng thư viện Numpy như phần trước.
 
 ![](https://lh3.googleusercontent.com/XiUAhZIfTz9cFLI-NZJGDlAAReCbtd5MwOv8D-W1gsnvi6ljbFdlroTQCXEckWJs9Utba434yQlAfhgMFd4QWRL2pXoXMcw8ofjcdG6brFtkwJZoSmI0qB2WTYNm1s1l4tdTbjK9CIwu2cE9OyXahp5kipScioqgo2GwlySZD1Ru-B5ZKYl167PwrP5e8vJa1wulV3VDjhvW6h6ggGQiNDKO6RSWAzh8rIfq40S2sOXYCjA7XgvJO_l-9cH8Uz5yol_OiQ86SqdnmZZ4r_90cPDCJfYPIWyMRE6OcZwDq_5e6Vh_CBTX9jXVMt7rEl8Y8wWaiVYjwzmDhvYmF4OY_YUK9X53cgqmB5y263nLpxyU1yzCeKZgU8wjZjNWP36hwjmLD47apCdfoVOiJAmCfQWPMs8RzmzwaChvPpB55PlI9itkvZasr6Y-J_8oyXTyAanh8TtuFtFOnk7rRBriy7cESj7dNP6yePbxvROmXPk69uNsT8FeasO6qFGworCeZYXNiYJ9XB9svAraHXPSEpgAvU1T2UqmtCt4kjSKK0qJFp3aE77hWmbfASyKGGxqUa2TDwvT-vhbJCx5DsNPu5meBYLJ4RBWzJIzXGmv8mjnzQlHquLA6f5BSWKu0MUEdMgU7oGDhg98HJ7S7bWjsb1osYdi7ZbCO282r_Dq25NLtv5vBWKx_t4pYsLGobhpWRsI0Xl8oovoZ-xvquG2tg=w994-h440-no?authuser=0)
+
+## **3. Các đặc trưng dưới dạng cạnh**
+Cạnh về cơ bản là nơi có sự thay đổi rõ nét về màu sắc. Và như chúng ta đã biết, một hình ảnh được biểu diễn dưới dạng các con số. Vì vậy, chúng tôi sẽ tìm kiếm các pixel xung quanh có sự thay đổi mạnh mẽ trong các giá trị pixel.
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-81.png)
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-9.png)
+
+Để xác định xem một pixel có phải là một cạnh hay không, chúng ta chỉ cần trừ các giá trị ở hai bên của pixel. Đối với ví dụ này, ta có giá trị được đánh dấu là 85. Chúng ta sẽ tìm sự khác biệt giữa hai giá trị 89 và 78. Vì sự khác biệt này không lớn lắm nên ta có thể nói rằng không có cạnh xung quanh pixel này.
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-101.png)
+
+Bây giờ hãy xem xét pixel 125 được đánh dấu trong hình. Vì sự khác biệt giữa các giá trị ở hai bên của pixel này lớn, ta có thể kết luận rằng có một sự chuyển đổi đáng kể tại pixel này và do đó nó là một cạnh. Bây giờ câu hỏi đặt ra là liệu chúng ta có cần phải thực hiện bước này theo cách thủ công không?
+Câu trả là không. Có nhiều nhân khác nhau có thể được sử dụng để làm nổi bật các cạnh trong hình ảnh. Phương pháp chúng ta vừa thảo luận cũng có thể đạt được bằng cách sử dụng nhân Prewitt (theo hướng x). Dưới đây là nhân Prewitt:
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-132.png)
+
+Lấy các giá trị xung quanh pixel đã chọn và nhân nó với nhân đã chọn (nhân Prewitt). Sau đó, chúng ta có thể thêm các giá trị kết quả để nhận được giá trị cuối cùng. Vì chúng ta đã có -1 trong một cột và 1 trong cột kia, nên việc thêm các giá trị tương đương với việc lấy chênh lệch.
+
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-111.png)
+
+Có rất nhiều loại nhân dưới đây là 4 loại hạt nhân thường được sử dụng phổ biến nhất:
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-121.png)
+
+![](https://lh3.googleusercontent.com/Dyvc4DzEyvY-piknxq-u4YFdmgvqS_IgaJvOeYI237RNmfRmiK14ixs1NuOyvgbjex6GnSN_AVGPccks0a2Rs4YsjC0b0zkq5Trp6QQTktyHDFy5a9QInL2q0niVfqE6v1IgxOjL9F-1sWZdx67DSZu1WKCMh7rsasQzzzZBAADfOrQMDXDeq--_h7tGw2vcCjUW8rBeWYQAdOA3DtaTb3rMxoZW9tIj6L4OLSvOUFF6CxjKSTueCk9stVhUu9FF5ps5mLFJy_f19fRdsY_A1fbryOvf8oUaXxb_-T_FY8_koWDrGRa6fxjXQOOskEYdJIN4BrhePfjK8ZF9vgpqgX_L5PNbVHo4BAkMIFXEhiXvtPW2x_HPpEX8K0ML5WBmHfgt9QZiQ9RBdztXafpRzQfGZmEphqJ0BYCLRGPQ5uCzrGgMR2--mVMlm-ZGosuUcCrKt6GkWioCZFrBCEFVYBo4V5upOWYtNryGM9wkD8Vyq7wUt9tOBZGMgojCdXaVLBZ7zH2U0mWBl494_aKluTLNk9M8zNeJCKWhSWjgTEJsHa5dEc7Ygehx3WqrQ0duuGtPP9AcUFTq0LcIJfR2JMRNeNEu6kxk1k3HedOkkWTnMvt7OYaYht4JUVnkQfIDxvejgdNW05pVT5k4C7qpo6nAc4ZV4qf108l7vgsYEFp8yV0_i4mprP_KKj9m3LLj-Q0MHuCEvLARt7IU8Rw9ag=w1001-h659-no?authuser=0)
+
+![](https://lh3.googleusercontent.com/VwACNSKIiL40oWg677SY9jnTLFrdI0-846s19PPRuNPJ3eF4Fj7wENw3JRWw2DT4979WQmRDv4aOx9ys2sDgJyxIk6rndGjQS7TGmckDBDTat1dQGO6cu-eNBZcq6Yfe7V4Ro6CEHBTdCMrAXvq46dpW9Z1Y_bx9MxamN7rHM7Ga_9Wpl1KhPNLOOY_W1IGPaluWOeeb_VObP_Wy5-e3vLGp0cnPbd_qtO-WAsV1ycaz6v0XtIo2jHoYnDe2PG2Lx3cZDal9_mIFMlHQzmX8NXTlZ1em71CJlgnzwks1S3djtExUsfSKyt41oyuyAibSJTz2oj2WX5QYVffqryQV2w168B2hDseZ6Xkc5-UftEwfRxqoqgAOjL6noMzvIyBtl_Wv7DuIBw6yCLoPr2cE3wpJ9T07YPxcGlQdWvu8co7w90zipE9QkqIRXi1s6jLAOTNK4j_31KUIQ9EzykYZal5IA5VKTnaC9umnPOnwxnJ_2N3rvZmsZsUiZY0O6miwPcFsZr-9NCveNXs7oTYSa7Zd_wM5mI7FDA39cfuKUXC6DW8Yvndlt8UjOLRYT1VgGwvyIA4xEnNdy0V9VASBQP2eYvFbRmdz62lvXVD9SECXriShwX0QHDsvNs-Aur9ie1WNBT4QaKuyYdLEJ1cwZ33QGbNs1OTa4WcjcsaNIuXztiwzQZpv-vAR-8o3dQf77GniATZS-uvufLtO82QlEA=w992-h654-no?authuser=0)
+
+# **Lời kết**
+Chúng ta đã đi tìm hiểu những khái niệm cơ bản đầu tiên liên quan đến trích xuất đặc trưng. Trong bài viết này trình bày 3 cách cơ bản để trích xuất đặc trưng đó là:
+  1. Các đặc trưng dưới dạng giá trị pixel trong ảnh xám
+  2. Các đặc trưng là giá trị pixel trung bình các kênh trong ảnh RGB
+  3. Các đặc trưng dưới dạng cạnh
+
+## **Authors**
+
+* **Truong Bao Nguyen** - [truongbaonguyen](https://github.com/truongbaonguyen)
+
+* **Trinh Tran Trung** - [flyingman2401](https://github.com/flyingman2401)
+
+## **License**
