@@ -13,6 +13,8 @@ Máy móc nhìn thấy bất kỳ hình ảnh nào dưới dạng ma trận số
 
 Giá trị Pixel cho mỗi pixel là viết tắt hoặc mô tả độ sáng và màu sắc của pixel đó. Vì vậy, trong trường hợp đơn giản nhất của ảnh nhị phân, giá trị pixel là số 1 bit cho biết nền trước hoặc nền sau (ảnh trắng đen). Vậy pixel là số hoặc giá trị biểu thị cường độ hoặc độ sáng của pixel. Các số nhỏ gần 0 biểu thị màu đen và các số lớn gần 255 biểu thị màu trắng. Vậy, đây là khái niệm về pixel và cách máy nhìn thấy hình ảnh thông qua các con số mà không cần mắt.
 
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-16.png)
+
 Tuy nhiên, đối với trường hợp hình ảnh có màu, chúng ta có 3 ma trận hoặc 3 kênh: màu đỏ (R), màu xanh lá (G), xanh lam (B). Trong 3 ma trận này, mỗi ma trận có các giá trị từ 0-255 đại diện cho cường độ màu của pixel đó.
 
 ![MATLAB | RGB image representation - GeeksforGeeks](https://media.geeksforgeeks.org/wp-content/uploads/Pixel.jpg)
