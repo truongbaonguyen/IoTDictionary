@@ -39,8 +39,6 @@ Vì vậy, làm cách nào để khai báo 231200 pixel là các đặc trưng c
 
 Tổng số đặc trưng của trường hợp này là 340\*680\*3 = 693600
 
-Từ quá khứ, tất cả chúng ta đều nhận thức được điều đó, số lượng các tính năng vẫn giữ nguyên. Trong trường hợp này, các giá trị pixel từ cả ba kênh của hình ảnh sẽ được nhân lên.
-
 ![](https://lh3.googleusercontent.com/oQz62dnTEQ_LzLc5Agg9Ym_ocV1Yto0vfECnPvQAPYvGeNgCbvo_3HUFtMpGYNMSs85bVz9YPdxLV5motdl2WunvRzFXKQVQS8_q7J4opRvgRIZZaOt9ZRkoK9FT4rRzRnVR2tklUv98qKRnQ5bKXAVReO3jIPX-I1iLccY0RidmmTml33KPVudmCtjdpJjzMAHy5icTPIWmR87Gn82z6MTySq1RbCZ60GQKxmm9prqHFQTeGnCUVfFLU5rcoNOQoeJ6CVd2c1tUo-RHEdaUK0QaxL7p07gNgFFyqLcEmRMxb2l5atfhH7UEjufDDkhsDXzR6O96Cuwad3GP5GbeCVO0fMCpRypAZzBjFdKbbsvxeCUVNdnrqvph1Hbkh3SOVo3L0De0HLPvQnGOq2DOfnclefCsH9Vb12Tz6giXEoGGgQV2-JSSKeRuGtFQjx9e7T9XTepgY-HE8FjEVc8PJsouwtJB59pfpwP9VxzhDXFw6r6qwDfw_Oj-t-cn1HlUPSy281UXRevRUtldULreYUBAFjMeAs1bzEtrf-q00aIsxxYVCVKJTA48wwwJ6D3H3doc1WHMR7rDNO-TjtKhdmEuOxBtgJNnZz6y44FSyHTIHep3oHmUYkVAmO50mUf-LTqLGJdYClNzHhMeHudmgjOgS_FIl-mBSmAcwbyvr_dCdxYfYD_DbosHT79sBOfDpsH2ynW0WsLVmPsxtdXhdw=w839-h514-no?authuser=0)
 
 Trong hình ảnh màu này có một ma trận 3D có kích thước (340 \* 680 \* 3) trong đó 340 biểu thị chiều cao, 680 là chiều rộng và 3 là số kênh. Để có được giá trị pixel trung bình cho hình ảnh, chúng ta sẽ sử dụng vòng lặp for.
