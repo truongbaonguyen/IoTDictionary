@@ -1,5 +1,7 @@
 ﻿# **Trích xuất đặc trưng là gì?**
-Trích xuất đặc trưng là một phần của quy trình giảm kích thước, trong đó, tập hợp dữ liệu thô ban đầu được chia và giảm thành các nhóm dễ quản lý hơn. Vì vậy, khi bạn muốn xử lý sẽ dễ dàng hơn. Đặc điểm quan trọng nhất của các tập dữ liệu lớn này là chúng có một số lượng lớn các biến. Các biến này yêu cầu nhiều tài nguyên máy tính để xử lý chúng. Vì vậy, việc trích xuất đặc trưng giúp có được tính năng tốt nhất từ ​​các tập dữ liệu lớn đó bằng cách chọn và kết hợp các biến thành các tính năng, do đó, giảm lượng dữ liệu một cách hiệu quả. Các tính năng này rất dễ xử lý, nhưng vẫn có thể mô tả tập dữ liệu thực tế với độ chính xác và độc đáo.
+```sh
+  Trích xuất đặc trưng là một phần của quy trình giảm kích thước, trong đó, tập hợp dữ liệu thô ban đầu được chia và giảm thành các nhóm dễ quản lý hơn. Vì vậy, khi bạn muốn xử lý sẽ dễ dàng hơn. Đặc điểm quan trọng nhất của các tập dữ liệu lớn này là chúng có một số lượng lớn các biến. Các biến này yêu cầu nhiều tài nguyên máy tính để xử lý chúng. Vì vậy, việc trích xuất đặc trưng giúp có được tính năng tốt nhất từ ​​các tập dữ liệu lớn đó bằng cách chọn và kết hợp các biến thành các tính năng, do đó, giảm lượng dữ liệu một cách hiệu quả. Các tính năng này rất dễ xử lý, nhưng vẫn có thể mô tả tập dữ liệu thực tế với độ chính xác và độc đáo.
+```
 # **Tại sao trích xuất đặc trưng hữu ích?**
 Kỹ thuật trích xuất các tính năng rất hữu ích khi bạn có một tập dữ liệu lớn và cần giảm số lượng tài nguyên mà không làm mất bất kỳ thông tin quan trọng hoặc liên quan nào. Tính năng trích xuất giúp giảm lượng dữ liệu dư thừa từ tập dữ liệu.
 
