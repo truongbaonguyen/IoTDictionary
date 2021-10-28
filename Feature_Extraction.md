@@ -57,7 +57,7 @@ Bây giờ chúng ta đã tạo ra một ma trận mới có cùng chiều cao v
 ![](https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/246377635_190645046546813_8398213391397648257_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=0debeb&_nc_ohc=oEJBd3Ku5rwAX82lzJw&_nc_ht=scontent.fdad1-3.fna&oh=a98a9d63f6adfec2503c9d1b16e9a825&oe=61A1A376)
 
 ## **3. Các đặc trưng dưới dạng cạnh**
-Cạnh về cơ bản là nơi có sự thay đổi rõ nét về màu sắc. Và như chúng ta đã biết, một hình ảnh được biểu diễn dưới dạng các con số. Vì vậy, chúng tôi sẽ tìm kiếm các pixel xung quanh có sự thay đổi mạnh mẽ trong các giá trị pixel.
+Cạnh về cơ bản là nơi có sự thay đổi rõ nét về màu sắc. Và như chúng ta đã biết, một hình ảnh được biểu diễn dưới dạng các con số. Vì vậy, chúng ta sẽ tìm kiếm các pixel xung quanh có sự thay đổi mạnh mẽ trong các giá trị pixel.
 
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/08/article-image-81.png)
 
