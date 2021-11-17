@@ -13,6 +13,14 @@ Trong Filter, các đặc tính được chọn dựa trên các phương pháp 
 
 Một số các phương thức đo lường thống kê được sử dụng trong Filter bao gồm Information gain, Chi-square test, Fisher score, correlation coef-ficient, và variance threshold. 
 
+### Variance Threshold
+Variance Threshold (tạm dịch là Ngưỡng phương sai) là một cách tiếp cận đơn giản với trích chọn đặc trưng. Nó loại bỏ tất cả các tính năng mà phương sai không đáp ứng đủ ngưỡng. Các đặc trưng có phương sai cao hơn có thể chứa nhiều thông tin hữu ích hơn.
+Phương pháp này không tính đến mối quan hệ giữa các đặc trưng hoặc giữa các đặc trưng và mục tiêu, chính vì thế, đây là một trong những hạn chế của phương pháp lọc (Filter)
+
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/10/Image-6-1.png)
+
+Hàm get_support() trả về một vectơ Boolean trong đó True có nghĩa là biến không có phương sai bằng không.
+
 ### Fisher Score
 Fisher Score là một trong những phương pháp trích chọn đặc trưng được sử dụng phổ biến nhất. Thuật toán này sẽ trả về thứ hạng của các biến dựa trên điểm của ngư dân theo thứ tự giảm dần. Chúng ta có thể chọn các biến tùy theo trường hợp mong muốn.
 
@@ -31,7 +39,13 @@ Chúng ta cần đặt một giá trị tuyệt đối, chẳng hạn như 0,5 l
 Nếu nhận thấy các biến dự báo rằng giữa 2 hay nhiều đặc trưng có tương quan với nhau, chúng ta có thể loại bỏ biến có giá trị hệ số tương quan thấp hơn với biến mục tiêu.
 Chúng ta cũng có thể tính toán nhiều hệ số tương quan để kiểm tra xem có hơn hai biến có tương quan với nhau hay không. Hiện tượng này được gọi là đa cộng tuyến.
 
-### Variance Threshold
+### Chi-square Test
+
+Chi-square Test được sử dụng trong việc phân loại đặc trưng trong tập dữ liệu.
+Ta sẽ tiến hành tính toán Chi-square giữa mỗi đặc trưng và mục tiêu rồi chọn ra số lượng đặc trưng mong muốn có điểm Chi-square tốt nhất.
+Để áp dụng chính xác phương pháp Chi-Square Test nhằm kiểm tra mối quan hệ giữa mỗi tính năng khác nhau trong tập dữ liệu và biến mục tiêu, phải đáp ứng những điều kiện sau: các biến đặc trưng phải được phân loại, được lấy mẫu độc lập và các giá trị phải có tần suất mong đợi lớn hơn 5.
+
+![](https://user-images.githubusercontent.com/84955172/142258540-a87bfb69-e593-42e4-94a8-150c6460aa17.png)
 
 
 ## Wrapper
