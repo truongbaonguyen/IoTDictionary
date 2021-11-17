@@ -3,7 +3,7 @@ Trong xây dựng mô hình máy học, lượng đặc trưng quá nhiều sẽ
 
 Trích chọn đặc trưng (feature selection hay còn gọi với các tên khác như là variable selection, attribute selection hay variable subset selection) là một quá trình chọn lọc một tập con chứa các thuộc tính liên quan, loại bỏ những dữ liệu dư thừa mà vẫn đảm bảo độ chính xác, nâng cao hiệu quả dự đoán cho các mô hình máy học. Việc trích chọn đặc trưng giải quyết được vấn đề đã đặt ra.
 
-## Các phương pháp trích chọn đặc trưng
+# Các phương pháp trích chọn đặc trưng
 Có 3 phương pháp để trích chọn đặc trưng, chúng được phân chia dựa trên sự tương tác với mô hình học máy như phương pháp Filter, Wrapper và Embedded. 
 
 Từng phương pháp học máy sẽ có những phương pháp tương ứng hiệu quả riêng với nó. Hiểu ngắn gọn, không có phương pháp vạn năng nào. 
