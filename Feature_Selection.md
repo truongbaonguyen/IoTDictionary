@@ -61,12 +61,16 @@ Khi bắt đầu, mảng đặc trưng được chọn chưa có đặc trưng n
 Thêm đặc trưng thứ hai bằng cách thử kết hợp đặc trưng đã chọn trước đó với tất cả các đặc trưng còn lại khác. Một lần nữa chọn đặc trưng có giá trị p nhỏ nhất. 
 Lặp lại quá trình này cho đến khi đạt được tiêu chí đặt trước, tức ta sẽ có một tập hợp các đặc trưng đã chọn với giá trị p của các đặc trưng riêng lẻ nhỏ hơn ngưỡng.
 
+![image](https://user-images.githubusercontent.com/84955172/142418780-e8502a27-fc17-4e26-b7c5-6e1654337ff3.png)
+
 ![](https://user-images.githubusercontent.com/84955172/142262936-e9391e40-ae41-423b-9c53-92603faaa8e0.png)
 
 ### 2. Backward Feature Elimination
 Phương thức này hoạt động hoàn toàn ngược lại với phương pháp Forward Feature Selection. Trong loại bỏ ngược, chúng ta bắt đầu với mảng đặc trưng đầy đủ (bao gồm tất cả các biến độc lập) và sau đó loại bỏ đặc trưng không quan trọng với giá trị p cao nhất (> mức ý nghĩa). 
 Quá trình này lặp đi lặp lại nhiều lần cho đến khi ta có được tập hợp các tính năng quan trọng cuối cùng.
 Phương pháp này cùng với phương pháp Forward Feature Selection còn được gọi là phương pháp Sequential Feature Selection.
+
+![image](https://user-images.githubusercontent.com/84955172/142418834-72499a02-69de-4f52-9b07-6a91ec53205c.png)
 
 ![](https://user-images.githubusercontent.com/84955172/142373894-2d583e8f-3350-41c8-a8a5-856324124d40.png)
 
