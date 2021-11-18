@@ -81,8 +81,6 @@ Một số thuật toán được sử dụng trong Embedded là Lasso Regressio
 ### 1. LASSO Regularization (L1)
 
 ### 2. Random Forest Importance
-Random Forests là một loại Bagging Algorithm. Phương pháp này cho phép nhiều cây đặc trưng 
-Random Forests is a kind of a Bagging Algorithm that aggregates a specified number of decision trees. 
 
 ## Tổng quan
 Các phương pháp đều có điểm chung là chấm điểm các features theo một giá trị, hoặc một công thức nào đó. Từ đó, ta có thể chọn ra một số lượng feature nhất định thông qua ngưỡng giá trị điểm đã chấm. 
