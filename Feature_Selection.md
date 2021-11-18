@@ -8,12 +8,12 @@ Có 3 phương pháp để trích chọn đặc trưng, chúng được phân ch
 
 Từng phương pháp học máy sẽ có những phương pháp tương ứng hiệu quả riêng với nó. Hiểu ngắn gọn, không có phương pháp vạn năng nào. 
 
-## Filter
+## Filter Methods
 Trong Filter, các đặc tính được chọn dựa trên các phương pháp thống kê dựa trên chấm điểm tiêu chí liên quan. Nó độc lập với thuật toán học và cần ít thời gian tính toán hơn. Nó chủ yếu được biết đến như một phương pháp nhanh và tổng quát, nhưng có xu hướng chọn các tập con đầu ra lớn.
 
 Một số các phương thức đo lường thống kê được sử dụng trong Filter bao gồm Information gain, Chi-square test, Fisher's score, correlation coef-ficient, và variance threshold. 
 
-### Variance Threshold
+### 1. Variance Threshold
 Variance Threshold (tạm dịch là Ngưỡng phương sai) là một cách tiếp cận đơn giản với trích chọn đặc trưng. Nó loại bỏ tất cả các tính năng mà phương sai không đáp ứng đủ ngưỡng. Các đặc trưng có phương sai cao hơn có thể chứa nhiều thông tin hữu ích hơn.
 Phương pháp này không tính đến mối quan hệ giữa các đặc trưng hoặc giữa các đặc trưng và mục tiêu, chính vì thế, đây là một trong những hạn chế của phương pháp lọc (Filter)
 
@@ -21,12 +21,12 @@ Phương pháp này không tính đến mối quan hệ giữa các đặc trưn
 
 Hàm get_support() trả về một vectơ Boolean trong đó True có nghĩa là biến không có phương sai bằng không.
 
-### Fisher's Score
+### 2. Fisher's Score
 Fisher's Score là một trong những phương pháp trích chọn đặc trưng được sử dụng phổ biến nhất. Thuật toán này sẽ trả về thứ hạng của các biến dựa trên Fisher's Score theo thứ tự giảm dần. Chúng ta có thể chọn các biến tùy theo trường hợp mong muốn.
 
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/10/Image-4-1.png)
 
-### Correlation Coefficient
+### 3. Correlation Coefficient
 Tương quan là thước đo mối quan hệ tuyến tính của 2 hoặc nhiều biến đặc trưng. 
 
 Thông qua mối tương quan, nếu hai biến có tương quan, chúng ta có thể dự đoán biến này từ biến khác. Do đó, nếu hai đặc trưng có tương quan với nhau, thì mô hình chỉ thực sự cần một trong số chúng, vì đặc trưng thứ hai không bổ sung thêm thông tin. Ta sẽ sử dụng Tương quan Pearson ở đây.
@@ -39,7 +39,7 @@ Chúng ta cần đặt một giá trị tuyệt đối, chẳng hạn như 0,5 l
 Nếu nhận thấy các biến dự báo rằng giữa 2 hay nhiều đặc trưng có tương quan với nhau, chúng ta có thể loại bỏ biến có giá trị hệ số tương quan thấp hơn với biến mục tiêu.
 Chúng ta cũng có thể tính toán nhiều hệ số tương quan để kiểm tra xem có hơn hai biến có tương quan với nhau hay không. Hiện tượng này được gọi là đa cộng tuyến.
 
-### Chi-square Test
+### 4. Chi-square Test
 
 Chi-square Test được sử dụng trong việc phân loại đặc trưng trong tập dữ liệu.
 Ta sẽ tiến hành tính toán Chi-square giữa mỗi đặc trưng và mục tiêu rồi chọn ra số lượng đặc trưng mong muốn có điểm Chi-square tốt nhất.
@@ -48,41 +48,41 @@ Ta sẽ tiến hành tính toán Chi-square giữa mỗi đặc trưng và mục
 ![](https://user-images.githubusercontent.com/84955172/142258540-a87bfb69-e593-42e4-94a8-150c6460aa17.png)
 
 
-## Wrapper
+## Wrapper Methods
 Khác với Filter, Wrapper sử dụng các kỹ thuật máy học để đánh giá tập con các đặc trưng theo tiêu chuẩn tương ứng. Hiệu suất của Wrapper phụ thuộc vào các thuật toán phân loại. Tập hợp con tốt nhất của các đặc trưng được chọn dựa trên kết quả của thuật toán phân loại.
 Về mặt tính toán, các phương pháp Wrapper yêu cầu tính toán phức tạp hơn các Filter, do các bước học tập lặp lại và xác nhận chéo. Tuy nhiên, các phương pháp này chính xác hơn Filter.
 Phương pháp này không được khuyến cáo với số lượng đặc trưng quá cao.
 
 Một số thuật toán được sử dụng trong Wrapper là Recursive feature elimination, Forward Feature Selection, and Backward Feature Elimination, Bi-directional elimination.
 
-### Forward Feature Selection
-Đây là một phương pháp lặp lại, ta bắt đầu với biến hoạt động tốt nhất so với mục tiêu. Tiếp theo, chúng ta chọn một biến khác mang lại hiệu suất tốt nhất kết hợp với biến được chọn đầu tiên. 
-
-Chúng ta bắt đầu, mảng đặc trưng được chọn chưa có đặc trưng nào. Sau đó, bắt đầu thêm vào đó từng đặc trưng đầu tiên với giá trị p nhỏ nhất trên tập đặc trưng.
-Thêm đặc trưng thứ hai bằng cách thử kết hợp đặc đã chọn trước đó với tất cả các đặc trưng còn lại khác. Một lần nữa chọn đặc trưng có giá trị p nhỏ nhất. 
+### 1. Forward Feature Selection
+Đây là một phương pháp lặp lại.
+Khi bắt đầu, mảng đặc trưng được chọn chưa có đặc trưng nào. Sau đó, bắt đầu thêm vào đó từng đặc trưng đầu tiên với giá trị p nhỏ nhất trên tập đặc trưng.
+Thêm đặc trưng thứ hai bằng cách thử kết hợp đặc trưng đã chọn trước đó với tất cả các đặc trưng còn lại khác. Một lần nữa chọn đặc trưng có giá trị p nhỏ nhất. 
 Lặp lại quá trình này cho đến khi đạt được tiêu chí đặt trước, tức ta sẽ có một tập hợp các đặc trưng đã chọn với giá trị p của các đặc trưng riêng lẻ nhỏ hơn ngưỡng.
 
 ![](https://user-images.githubusercontent.com/84955172/142262936-e9391e40-ae41-423b-9c53-92603faaa8e0.png)
 
-### Backward Feature Elimination
+### 2. Backward Feature Elimination
 Phương thức này hoạt động hoàn toàn ngược lại với phương pháp Forward Feature Selection. Trong loại bỏ ngược, chúng ta bắt đầu với mảng đặc trưng đầy đủ (bao gồm tất cả các biến độc lập) và sau đó loại bỏ đặc trưng không quan trọng với giá trị p cao nhất (> mức ý nghĩa). 
 Quá trình này lặp đi lặp lại nhiều lần cho đến khi ta có được tập hợp các tính năng quan trọng cuối cùng.
 Phương pháp này cùng với phương pháp Forward Feature Selection còn được gọi là phương pháp Sequential Feature Selection.
 
 ![](https://user-images.githubusercontent.com/84955172/142373894-2d583e8f-3350-41c8-a8a5-856324124d40.png)
 
-### Bi-directional elimination
+### 3. Bi-directional elimination
 Nó tương tự như Forward Feature Selection nhưng sự khác biệt là trong khi thêm một tính năng mới, nó cũng kiểm tra tầm quan trọng của các đặc trưng đã được thêm vào và nếu nó tìm thấy đặc trưng nào đã chọn là không đáng kể thì nó cần loại bỏ tính năng cụ thể đó thông qua Backward Feature Elimination.
 
-## Embedded
-Cách tiếp cận thứ ba là phương pháp Embedded sử dụng phương pháp học tập kết hợp và phương pháp lai để lựa chọn đặc trưng, giải pháp trích chọn đặc trưng này ra đời để giải quyết bài toán trên. Nó có các ưu điểm bao gồm giúp cho thuật toán máy học huấn luyện nhanh hơn so với phương pháp Wrapper, giảm độ phức tạp của mô hình và làm cho mô hình dễ biên dịch, chính xác hơn so với phương pháp Filter.
+## Embedded Methods
+Phương pháp Embedded kết hợp ưu điểm của cả hai phương pháp Wrapper và Filter. Nó có các ưu điểm bao gồm giúp cho thuật toán máy học huấn luyện nhanh hơn so với phương pháp Wrapper, giảm độ phức tạp của mô hình và làm cho mô hình dễ biên dịch, chính xác hơn so với phương pháp Filter.
 
 Một số thuật toán được sử dụng trong Embedded là Lasso Regression, Ridge Regression, Random Forest Importance.
 
-### LASSO Regularization (L1)
+### 1. LASSO Regularization (L1)
 
-### Random Forest Importance
-
+### 2. Random Forest Importance
+Random Forests là một loại Bagging Algorithm. Phương pháp này cho phép nhiều cây đặc trưng 
+Random Forests is a kind of a Bagging Algorithm that aggregates a specified number of decision trees. 
 
 ## Tổng quan
 Các phương pháp đều có điểm chung là chấm điểm các features theo một giá trị, hoặc một công thức nào đó. Từ đó, ta có thể chọn ra một số lượng feature nhất định thông qua ngưỡng giá trị điểm đã chấm. 
