@@ -82,10 +82,6 @@ Phương pháp Embedded kết hợp ưu điểm của cả hai phương pháp Wr
 
 Một số thuật toán được sử dụng trong Embedded là Lasso Regression, Ridge Regression, Random Forest Importance.
 
-### 1. LASSO Regularization (L1)
-
-### 2. Random Forest Importance
-
 ## Tổng quan
 Các phương pháp đều có điểm chung là chấm điểm các features theo một giá trị, hoặc một công thức nào đó. Từ đó, ta có thể chọn ra một số lượng feature nhất định thông qua ngưỡng giá trị điểm đã chấm. 
 
