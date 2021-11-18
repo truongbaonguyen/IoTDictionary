@@ -90,5 +90,6 @@ Một số thuật toán được sử dụng trong Embedded là Lasso Regressio
 Các phương pháp đều có điểm chung là chấm điểm các features theo một giá trị, hoặc một công thức nào đó. Từ đó, ta có thể chọn ra một số lượng feature nhất định thông qua ngưỡng giá trị điểm đã chấm. 
 
 
+# Tài liệu tham khảo
 https://www.analyticsvidhya.com/blog/2020/10/a-comprehensive-guide-to-feature-selection-using-wrapper-methods-in-python/
 https://www.analyticsvidhya.com/blog/2020/10/feature-selection-techniques-in-machine-learning/
