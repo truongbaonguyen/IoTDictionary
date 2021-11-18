@@ -54,6 +54,17 @@ Về mặt tính toán, các phương pháp Wrapper yêu cầu tính toán phứ
 Phương pháp này không được khuyến cáo với số lượng đặc tính quá cao.
 
 Một số thuật toán được sử dụng trong Wrapper là Recursive feature elimination, Sequential feature selection algorithms, and Genetic algorithms. 
+
+### Forward Feature Selection
+Đât là một phương pháp lặp lại, ta bắt đầu với biến hoạt động tốt nhất so với mục tiêu. Tiếp theo, chúng tôi chọn một biến khác mang lại hiệu suất tốt nhất kết hợp với biến được chọn đầu tiên. 
+
+Chúng ta bắt đầu, mảng đặc trưng được chọn chưa có đặc trưng nào. Sau đó, bắt đầu thêm vào từng đặc trưng đầu tiên với giá trị p nhỏ nhất trên tập đặc trưng.
+Thêm đặc trưng thứ hai bằng cách thử kết hợp đặc đã chọn trước đó với tất cả các đặc trưng còn lại khác. Một lần nữa chọn đặc trưng có giá trị p nhỏ nhất. 
+Lặp lại quá trình này cho đến khi đạt được tiêu chí đặt trước, tức ta sẽ có một tập hợp các đặc trưng đã chọn với giá trị p của các đặc trưng riêng lẻ nhỏ hơn ngưỡng.
+
+![](https://user-images.githubusercontent.com/84955172/142262936-e9391e40-ae41-423b-9c53-92603faaa8e0.png)
+
+
 ## Embedded
 Cách tiếp cận thứ ba là phương pháp Embedded sử dụng phương pháp học tập kết hợp và phương pháp lai để lựa chọn đặc tính, giải pháp trích chọn đặc trưng này ra đời để giải quyết bài toán trên. Nó có các ưu điểm bao gồm giúp cho thuật toán máy học huấn luyện nhanh hơn so với phương pháp Wrapper, giảm độ phức tạp của mô hình và làm cho mô hình dễ biên dịch, chính xác hơn so với phương pháp Filter.
 
@@ -63,3 +74,5 @@ Các phương pháp đều có điểm chung là chấm điểm các features th
 
 
 # Quy trình trích chọn đặc trưng
+https://www.analyticsvidhya.com/blog/2020/10/a-comprehensive-guide-to-feature-selection-using-wrapper-methods-in-python/
+https://www.analyticsvidhya.com/blog/2020/10/feature-selection-techniques-in-machine-learning/
