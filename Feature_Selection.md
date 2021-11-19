@@ -89,3 +89,4 @@ Các phương pháp đều có điểm chung là chấm điểm các features th
 # Tài liệu tham khảo
 https://www.analyticsvidhya.com/blog/2020/10/a-comprehensive-guide-to-feature-selection-using-wrapper-methods-in-python/
 https://www.analyticsvidhya.com/blog/2020/10/feature-selection-techniques-in-machine-learning/
+https://onestopdataanalysis.com/python-random-forest-regression/
