@@ -84,6 +84,7 @@ Một số thuật toán được sử dụng trong Embedded là Lasso Regressio
 
 ## Tổng quan
 Các phương pháp đều có điểm chung là chấm điểm các features theo một giá trị, hoặc một công thức nào đó. Từ đó, ta có thể chọn ra một số lượng feature nhất định thông qua ngưỡng giá trị điểm đã chấm. 
+Một thuật toán trích chọn đặc trưng có thể được chọn dựa trên những điều sau: tính đơn giản, tính ổn định, số lượng đặc trưng cần giảm, độ chính xác của phân loại, yêu cầu lưu trữ và tính toán. 
 
 
 # Tài liệu tham khảo
