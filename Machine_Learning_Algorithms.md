@@ -99,6 +99,8 @@ Hồi quy tuyến tính chủ yếu có hai loại: Hồi quy tuyến tính đơ
 
 Cây quyết định (Decision Tree) là một cây phân cấp có cấu trúc được dùng để phân lớp các đối tượng dựa vào dãy các luật. Các thuộc tính của đối tượng có thể thuộc các kiểu dữ liệu khác nhau như Nhị phân (Binary) , Định danh (Nominal), Thứ tự (Ordinal), Số lượng (Quantitative) trong khi đó thuộc tính phân lớp phải có kiểu dữ liệu là Binary hoặc Ordinal.
 
+![image](https://user-images.githubusercontent.com/87793139/149312856-f5f4045e-7a85-4fd5-aa59-8714be55fd8b.png)
+
 Xét một ví dụ 1 kinh điển khác về cây quyết định. Giả sử dựa theo thời tiết mà các bạn sẽ quyết định đi chơi hay không?
 
 Những đặc điểm ban đầu là: thời tiết, độ ẩm, gió.
