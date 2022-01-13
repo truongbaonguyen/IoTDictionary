@@ -63,7 +63,7 @@ Lặp lại quá trình này cho đến khi đạt được tiêu chí đặt tr
 
 ![image](https://user-images.githubusercontent.com/84955172/142418780-e8502a27-fc17-4e26-b7c5-6e1654337ff3.png)
 
-![image](https://user-images.githubusercontent.com/84955172/149333604-7e0418ab-d032-43bf-97b8-1e23823f4e6f.png)
+![Bản chiếu1](https://user-images.githubusercontent.com/84955172/149344162-357a2cb3-a5aa-4982-954c-d34608c05b7a.JPG)
 
 ![](https://user-images.githubusercontent.com/84955172/142262936-e9391e40-ae41-423b-9c53-92603faaa8e0.png)
 
@@ -74,7 +74,7 @@ Phương pháp này cùng với phương pháp Forward Feature Selection còn đ
 
 ![image](https://user-images.githubusercontent.com/84955172/142418834-72499a02-69de-4f52-9b07-6a91ec53205c.png)
 
-![image](https://user-images.githubusercontent.com/84955172/149333493-3a1f78ef-6b9c-4e7c-87b0-97a887e414ac.png)
+![Bản chiếu2](https://user-images.githubusercontent.com/84955172/149344109-a80a9cb3-3896-4a64-ba05-441337b5cb69.JPG)
 
 ![](https://user-images.githubusercontent.com/84955172/142373894-2d583e8f-3350-41c8-a8a5-856324124d40.png)
 
