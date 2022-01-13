@@ -99,8 +99,6 @@ Hồi quy tuyến tính chủ yếu có hai loại: Hồi quy tuyến tính đơ
 
 Cây quyết định (Decision Tree) là một cây phân cấp có cấu trúc được dùng để phân lớp các đối tượng dựa vào dãy các luật. Các thuộc tính của đối tượng có thể thuộc các kiểu dữ liệu khác nhau như Nhị phân (Binary) , Định danh (Nominal), Thứ tự (Ordinal), Số lượng (Quantitative) trong khi đó thuộc tính phân lớp phải có kiểu dữ liệu là Binary hoặc Ordinal.
 
-![image](https://user-images.githubusercontent.com/87793139/149312856-f5f4045e-7a85-4fd5-aa59-8714be55fd8b.png)
-
 Xét một ví dụ 1 kinh điển khác về cây quyết định. Giả sử dựa theo thời tiết mà các bạn sẽ quyết định đi chơi hay không?
 
 Những đặc điểm ban đầu là: thời tiết, độ ẩm, gió.
@@ -246,6 +244,8 @@ Gán các ví dụ vào cụm có tâm gần nó nhất.
 ## **8. Random Forest**
 
 Random Forest là thuật toán học có giám sát (supervised learning). Nó có thể được sử dụng cho cả phân lớp và hồi quy. Nó cũng là một trong những thuật toán linh hoạt và dễ sử dụng nhất. Random forest tạo ra cây quyết định trên các mẫu dữ liệu được chọn ngẫu nhiên, được dự đoán từ mỗi cây và chọn giải pháp tốt nhất bằng cách bỏ phiếu. Như tên gọi của nó, Rừng ngẫu nhiên sử dụng các cây (tree) để làm nền tảng. Rừng ngẫu nhiên là một tập hợp của các Decision Tree, mà mỗi cây được chọn theo một thuật toán dựa vào ngẫu nhiên.
+
+![image](https://user-images.githubusercontent.com/87793139/149312856-f5f4045e-7a85-4fd5-aa59-8714be55fd8b.png)
 
 *Ví dụ:* Giả sử bạn muốn đi trên một chuyến đi và bạn muốn đi đến một nơi mà bạn sẽ thích. Bạn quyết định hỏi bạn bè và nói chuyện với họ về trải nghiệm du lịch trong quá khứ của họ đến những nơi khác nhau. Bạn sẽ nhận được một số khuyến nghị từ tất cả các bạn. Bây giờ bạn phải tạo danh sách các địa điểm được đề xuất. Sau đó, bạn nhờ họ bỏ phiếu (hoặc chọn địa điểm tốt nhất cho chuyến đi) từ danh sách các địa điểm được đề xuất bạn đã thực hiện. Địa điểm có số phiếu bầu cao nhất sẽ là lựa chọn cuối cùng của bạn cho chuyến đi.
 
