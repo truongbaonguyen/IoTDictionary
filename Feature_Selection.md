@@ -74,7 +74,7 @@ Phương pháp này cùng với phương pháp Forward Feature Selection còn đ
 
 ![image](https://user-images.githubusercontent.com/84955172/142418834-72499a02-69de-4f52-9b07-6a91ec53205c.png)
 
-![Bản chiếu2](https://user-images.githubusercontent.com/84955172/149344109-a80a9cb3-3896-4a64-ba05-441337b5cb69.JPG)
+![Bản chiếu2](https://user-images.githubusercontent.com/84955172/149344402-bedb46dc-6741-4f41-92d3-99a4131a78b0.JPG)
 
 ![](https://user-images.githubusercontent.com/84955172/142373894-2d583e8f-3350-41c8-a8a5-856324124d40.png)
 
